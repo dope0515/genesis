@@ -1761,9 +1761,10 @@ transition: background-color 0.3s;
     /*g_history*/
 
     .g_history_container {
-        background:linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 1%,rgba(0,0,0,0.8) 30%,rgba(0,0,0,0.8) 40%,rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.1)) 100%, url(../img/history_bg.jpg);
+        background:linear-gradient(to bottom,rgba(20,20,20,0.4) 50%, rgba(20,20,20,0.7) 60%, rgba(0,0,0,0.9) 90%, rgba(20,20,20,0.9)) 100%, url(../img/history_bg.jpg);
         background-repeat: no-repeat;
         background-position: center top;
+        height: 100vh;
     }
 
     .g_history_bg_container:first-child {
@@ -1877,7 +1878,7 @@ transition: background-color 0.3s;
     }
 
     .footer_second {
-        height: 280px;
+        height: 300px;
         flex-direction: column;
         padding: 0;
         overflow: hidden;
