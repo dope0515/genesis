@@ -1049,6 +1049,10 @@ transition: background-color 0.3s;
     letter-spacing: 1.6PX;
 }
 
+#m_container {
+    display: none;
+}
+
 .m_history_img {
     display: none;
 }
@@ -1769,10 +1773,12 @@ transition: background-color 0.3s;
     /*g_history*/
 
     #m_container {
+        display: block;
         width: 100%;
         height: 100%;
         background-color: rgba(0,0,0,0.9);
         position: static;
+        overflow: hidden;
         top: 0;
         opacity: 0;
         transition: opacity 1s;
