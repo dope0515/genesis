@@ -1791,6 +1791,7 @@ transition: background-color 0.3s;
 
     #m_history_content {
         width: 2800px;
+        height: 100%;
         display: flex;
         justify-content: space-between;
         transition: all 0.5s;
@@ -2186,7 +2187,6 @@ transition: background-color 0.3s;
     .m_history_img {
         height: auto;
         padding-bottom: 30px;
-        
     }
 
     /*sub_content*/
