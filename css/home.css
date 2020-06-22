@@ -1848,6 +1848,7 @@ transition: background-color 0.3s;
         position: fixed;
         top: 2%;
         left: 95%;
+        z-index: 1;
     }
 
     #history_close:hover {
@@ -2180,10 +2181,12 @@ transition: background-color 0.3s;
 
     #m_history_content {
         width: 520%;
+        height: 100%;
     }
     .m_history_img {
         height: auto;
         padding-bottom: 30px;
+        
     }
 
     /*sub_content*/
