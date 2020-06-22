@@ -701,7 +701,7 @@
     </div>
     <ul class="g_history_container">
         <div id="m_container">
-            <div style="color:#fff; width: 100%; display: flex; justify-content: flex-end;" ><p onclick="mContainerClose()" id="history_close">x</p></div>
+            <div class="history_close_container"><p onclick="mContainerClose()" id="history_close">x</p></div>
             <div id="m_history_content">
                 <li class="g_history_bg_container">
                     <img src="img/m_history_01.jpg" alt="" class="m_history_img">
@@ -787,6 +787,7 @@
             document.getElementById("body").style = "height:100vh; overflow:hidden;";
             mContainer.style = "opacity:1; position:fixed; z-index:10;";
             document.getElementById("m_history_content").style = "transform: translateX(" + (historyIndex * -20) + "%)";
+            
             }
         }
 

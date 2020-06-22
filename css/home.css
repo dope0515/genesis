@@ -1648,6 +1648,7 @@ transition: background-color 0.3s;
     }
     .snb:nth-child(4) .snb_container {
         height: 130vh;
+        overflow-y: scroll;
     }
 
     .snb_img_box{
@@ -1842,10 +1843,16 @@ transition: background-color 0.3s;
         background-image: none;
     }
 
+    .history_close_container {
+        width: 100%;
+        color:#fff;
+        display: flex;
+        justify-content: flex-end;
+    }
 
     #history_close {
-        width: 16px;
-        height: 16px;
+        width: 20px;
+        height: 20px;
         position: fixed;
         top: 2%;
         left: 95%;
