@@ -12,6 +12,9 @@
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
 
+    <!-- 파비콘 링크 -->
+    <link rel="shorcut icon" href="img/favicon.jpg">
+    <link rel="icon" href="img/favicon.jpg">
 </head>
 <body id="body" onscroll ="scrollFadeIn()">
 
@@ -719,7 +722,7 @@
                     <img src="img/m_history_03.jpg" alt="" class="m_history_img">
                     <div class="g_history_text_container">
                         <h2 class="color_brown">NEW YORK<br>AUTO SHOW 2019</h2>
-                        <p class="color_white">뉴욕 모터쇼 전야 허드슨 야드에서 ‘스몰 카, 빅 애플(Small Car, Big Apple)’의<br> 테마로 프리미엄 씨티카 ‘민트 콘셉트’의 언베일링 행사가 열렸습니다.
+                        <p class="color_white">뉴욕 모터쇼 전야 허드슨 야드에서 ‘스몰 카, 빅 애플(Small Car, Big Apple)’의 테마로 프리미엄 씨티카 ‘민트 콘셉트’의 언베일링 행사가 열렸습니다.
                         <p class="color_white"><a href="">자세히 보기</a></p>
                     </div>
                 </li>
@@ -727,7 +730,7 @@
                     <img src="img/m_history_04.jpg" alt="" class="m_history_img">
                     <div class="g_history_text_container">
                         <h2 class="color_brown">SEOUL<br>MOTOR SHOW 2019</h2>
-                        <p class="color_white">제네시스 커먼부스가 2018 레드닷 어워드 ‘커뮤니케이션 디자인’ 부문을<br> 수상하였습니다.
+                        <p class="color_white">제네시스 커먼부스가 2018 레드닷 어워드 ‘커뮤니케이션 디자인’ 부문을 수상하였습니다.
                         <p class="color_white"><a href="">자세히 보기</a></p>
                     </div>
                 </li>
@@ -735,17 +738,10 @@
                     <img src="img/m_history_05.jpg" alt="" class="m_history_img">
                     <div class="g_history_text_container">
                         <h2 class="color_brown">BUSAN<br>MOTOR SHOW 2018</h2>
-                        <p class="color_white">부산 모터쇼 제네시스관에서 아시아 최초로 공개되는 2 도어 전기차 기반 GT<br> 콘셉트카, 에센시아 콘셉트와 제네시스 전차종 라인업이 전시되었습니다.
+                        <p class="color_white">부산 모터쇼 제네시스관에서 아시아 최초로 공개되는 2 도어 전기차 기반 GT 콘셉트카, 에센시아 콘셉트와 제네시스 전차종 라인업이 전시되었습니다.
                         <p class="color_white"><a href="">자세히 보기</a></p>
                     </div>
                 </li>
-            </div>
-            <div class="history_current_page">
-                <div class="history_current_page_btn" onclick="moveMobilePage(0)"></div>
-                <div class="history_current_page_btn" onclick="moveMobilePage(1)"></div>
-                <div class="history_current_page_btn" onclick="moveMobilePage(2)"></div>
-                <div class="history_current_page_btn" onclick="moveMobilePage(3)"></div>
-                <div class="history_current_page_btn" onclick="moveMobilePage(4)"></div>
             </div>
         </div>
     </ul>
@@ -788,40 +784,17 @@
             }
 
             if(document.body.clientWidth < 1024) {
-                for (i=0;i<historyBg.length;i++) {
-                    historyBg[i].style = "opacity:0.3";
-                    historyBg[historyIndex].style = "opacity:1"
-                }
-
             document.getElementById("body").style = "height:100vh; overflow:hidden;";
-            mContainer.style = "opacity:1; position:fixed; z-index:10;";           document.getElementById("m_history_content").style = "transform: translateX(" + (historyIndex * -20) + "%)";
-            currentBtn[historyIndex].style = "background-color:#cd9a81"
+            mContainer.style = "opacity:1; position:fixed; z-index:10;";
+            document.getElementById("m_history_content").style = "transform: translateX(" + (historyIndex * -20) + "%)";
             }
         }
 
         function mContainerClose() {
-            for(i=0;i<currentBtn.length;i++){
-            currentBtn[i].style = "background-color:rgba(100, 100, 100, 0.9)";
-            }
             document.getElementById("body").style = "height:auto; overflow:visible;";
             mContainer.style = "opacity:0; position:static; z-index:0"
         }
-             
-        function moveMobilePage(mobileIndex) {
-            
-            for(i=0;i<currentBtn.length;i++){
-            currentBtn[i].style = "background-color:rgba(100, 100, 100, 0.9)";
-            }
-            for (i=0;i<historyBg.length;i++) {
-                    historyBg[i].style = "opacity:0.3";
-                    historyBg[mobileIndex].style = "opacity:1"
-                }
-            document.getElementById("m_history_content").style = "transform: translateX(" + (mobileIndex * -20) + "%)";
-            currentBtn[mobileIndex].style = "background-color:#cd9a81"
-        }
-
-
-    </script>
+</script>
 
 
 
