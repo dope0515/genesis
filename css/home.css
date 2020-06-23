@@ -1655,6 +1655,7 @@ transition: background-color 0.3s;
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
         -webkit-transform: translateZ(0);
+        position: fixed;
     }
 
     .snb_container {
@@ -1669,6 +1670,7 @@ transition: background-color 0.3s;
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
         -webkit-transform: translateZ(0);
+        position: fixed;
     }
 
     .snb_img_box{
