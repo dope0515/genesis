@@ -1654,6 +1654,7 @@ transition: background-color 0.3s;
         overflow-y: scroll;
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
+        -webkit-transform: translateZ(0);
     }
 
     .snb_container {
@@ -2225,6 +2226,12 @@ transition: background-color 0.3s;
 }
 
 @media (max-width: 769px) {
+    #g_history_btn_container{
+        left: 43%;
+    }
+}
+
+@media (max-width: 415px) {
     #g_history_btn_container{
         left: 37%;
     }
