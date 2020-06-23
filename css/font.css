@@ -1,16 +1,11 @@
 @font-face {
-    font-family:'NanumSquare-B';
-    src: url(../font/NanumSquareOTFBold.woff);
-}
+    font-family:'genesis_head_light';
+    src: url(../font/GenesisSansHeadKRLight.99903da.woff2);}
+
 @font-face {
-    font-family:'NanumSquare-EB';
-    src: url(../font/NanumSquareOTFExtraBold.woff);
-}
+    font-family:'genesis_head_regular';
+    src: url(../font/GenesisSansHeadKRRegular.0c3d379.woff2);}
+
 @font-face {
-    font-family:'NanumSquare-L';
-    src: url(../font/NanumSquareOTFLight.woff);
-}
-@font-face {
-    font-family:'NanumSquare';
-    src: url(../font/NanumSquareOTFRegular.woff);
-}
+    font-family:'genesis_text';
+    src: url(../font/GenesisSansTextKRRegular.a42a31c.woff2);}

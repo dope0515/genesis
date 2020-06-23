@@ -1,897 +1,1075 @@
-<!DOCTYPE html>
-
 <html lang="ko">
-
 <head>
-    <title>NAVER Corporation</title>
+    <title>제네시스(GENESIS)</title>
     <meta charset="UTF-8">
-    <meta name="description" content="navercorp">
-    <meta name="keywords" content="naver, 네이버, corporation">
+    <meta name="description" content="Genesis web site">
+    <meta name="keywords" content="genesis, g80, gv80">
     <meta name="author" content="park seung joo">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/destyle.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
 
- <!-- 브라우저 css 링크 -->
-    <link rel="stylesheet" type="text/css" href="css/destyle.css"> <!-- 초기화 링크 -->
-    <link rel="stylesheet" type="text/css" href="css/font.css"> <!-- 폰트 링크 -->
-    <link rel="stylesheet" type="text/css" href="css/common.css"> <!-- 공통 링크 -->
-    <link rel="stylesheet" type="text/css" href="css/home.css"> <!-- 메인 링크 -->
-        
-<!-- 파비콘 링크 -->
-    <link rel="shorcut icon" href="img/favicon.ico">
-    <link rel="icon" href="img/favicon.ico">
-    
+    <!-- 파비콘 링크 -->
+    <link rel="shorcut icon" href="img/favicon.jpg">
+    <link rel="icon" href="img/favicon.jpg">
 </head>
-<body>
-<div class="hidden_menu">
-    <ul class="hidden_menu_container color_white">
-        <li class="hidden_menu_list">
-            <h2 class="color_white">네이버</h2>
-            <div>
-                <h5 class="h5_support_title"><a href="">NAVER</a></h5>
-                <p><a href="">네이버 소개</a></p>
-                <p><a href="">주요 연혁</a></p>
-                <p><a href="">수상내역</a></p>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">주요관계사</a></h5>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">제휴제안</a></h5>
-                <p><a href="">제휴제안 안내</a></p>
-                <p><a href="">제휴제안 등록</a></p>
-                <p><a href="">검토현황 조회</a></p>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">Contact</a></h5>
-            </div>
-        </li>
-        <li class="hidden_menu_list">
-            <h2 class="color_white">서비스</h2>
-            <div>
-                <h5 class="h5_support_title"><a href="">FEATURED SERVICES</a></h5>
+<body id="body" onscroll ="scrollFadeIn()">
 
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">FOR BUSINESS</a></h5>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">FOR CREATORS</a></h5>
-
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">FOR DEVELOPERS</a></h5>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">ALLSERVICE</a></h5>
-            </div>
-        </li>
-        <li class="hidden_menu_list">
-            <h2 class="color_white">가치실현</h2>
-            <div>
-                <h5 class="h5_support_title"><a href="">프로젝트 꽃</a></h5>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">기업윤리</a></h5>
-                <p><a href="">기업윤리규범</a></p>
-                <p><a href="">기업윤리 상담센터</a></p>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">프라이버시 센터</a></h5>
-                <p><a href="">네이버 리포트</a></p>
-                <p><a href="">개인정보 보호</a></p>
-                <p><a href="">정보보호인증</a></p>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">동반성장</a></h5>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">환경</a></h5>
-                <p><a href="">데이터센터 각</a></p>
-                <p><a href="">네이버 사옥</a></p>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">With Naver</a></h5>
-                <p><a href="">재단법인 해피빈</a></p>
-                <p><a href="">네이버 문화재단</a></p>
-                <p><a href="">커넥트 재단</a></p>
-                <p><a href="">접근성</a></p>
-                <p><a href="">네이버 라이브러리</a></p>
-            </div>
-        </li>
-        <li class="hidden_menu_list">
-            <h2 class="color_white">홍보</h2>
-            <div>
-                <h5 class="h5_support_title"><a href="">보도자료</a></h5>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">TV광고</a></h5>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">미디어행사</a></h5>
-
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">커뮤니케이션 채널</a></h5>
-            </div>
-        </li>
-        <li class="hidden_menu_list">
-            <h2 class="color_white">투자정보</h2>
-            <div>
-                <h5 class="h5_support_title"><a href="">기업지배구조</a></h5>
-                <p><a href="">주주구성</a></p>
-                <p><a href="">이사회</a></p>
-                <p><a href="">장관</a></p>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">공시정보</a></h5>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">주가정보</a></h5>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">재무정보</a></h5>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">IR일정</a></h5>
-                <p><a href="">IR 행사</a></p>
-                <p><a href="">IR MEETING</a></p>
-                <p><a href="">주주총회</a></p>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">IR자료실</a></h5>
-                <p><a href="">실적발표</a></p>
-                <p><a href="">감사보고서</a></p>
-                <p><a href="">사업보고서</a></p>
-                <p><a href="">연차보고서</a></p>
-                <p><a href="">FAQ</a></p>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">결산공고</a></h5>
-            </div>
-            <div>
-                <h5 class="h5_support_title"><a href="">공고</a></h5>
-            </div>
-        </li>
-        <li class="hidden_menu_list">
-            <h2 class="color_white"><a href="">채용</a></h2>
-            <div>
-                <h5 class="h5_support_title"><a href="">채용정보</a></h5>
-            </div>
-        </li>
-    </ul>
-
-</div>
-<header id="header_container">
-
-    <div class="header_wrap" >
-
-        <h1 class="header_logo">
-            <a href="index.html"><img src="img/header_logo.png" id="naver_logo"></a>
+<header>
+    <nav>
+        <h1 class="logo_img">
+           <img style="width: 100%;" src="img/genesis_logo.png" alt="genesis_logo_image"> 
         </h1>
-        
-        <nav id="gnb_container">
-            <ul class="gnb_menu p_gnb_text color_lightblack">
-                <li class="gnb_list" onmouseover="menuOpen(1)" onmouseout="menuClose()">
-                    <a>네이버</a>
-                    <div class="gnb_menu_hr"></div>
-                </li>
-                <li class="gnb_list" onmouseover="menuOpen(2)" onmouseout="menuClose()">
-                    <a>서비스</a>
-                    <div class="gnb_menu_hr"></div>
-                </li>
-                <li class="gnb_list" onmouseover="menuOpen(3)" onmouseout="menuClose()">
-                    <a>가치실현</a>
-                    <div class="gnb_menu_hr"></div>
-                </li>
-                <li class="gnb_list" onmouseover="menuOpen(4)" onmouseout="menuClose()">
-                    <a>홍보</a>
-                    <div class="gnb_menu_hr"></div>
-                </li>
-                <li class="gnb_list" onmouseover="menuOpen(5)" onmouseout="menuClose()">
-                    <a>투자정보</a>
-                    <div class="gnb_menu_hr"></div>
-                </li>
-                <li class="gnb_list">
-                    <a>채용</a> 
-                    <div class="gnb_menu_hr"></div>
-                </li>
-            </ul>
-        </nav>
-
-    <div class="header_aside p_text">
-            <div class="header_lang">
-                <a>KOR</a>
-                <a>ENG</a>
-            </div>
-            <a class="header_sitemap" onclick="menuClick()">
-                <div class="btn_line_container">
-                    <div class="btn_line"></div>
-                    <div class="btn_line"></div>
-                    <div class="btn_line"></div>
+        <ul id="gnb">
+            <li class="gnb_content" onmouseover="headerOpen(0)" onmouseout="headerClose(0)" onclick="m_HeaderOpen(0)">
+                <div class="gnb_content_container">
+                    <h6 class="color_white gnb_title">MODELS</h6>
+                    <div class="gnb_arrow">
+                        <div class="arrow_left"></div>
+                        <div class="arrow_right"></div>
+                    </div>
                 </div>
-            </a>
-    </div>
-    </div>
-    <div class="snb" onmouseover="menuOpen(1)" onmouseout="menuClose()">
-        <div class="snb_menu_container">
-            <ul class="snb_naver_container">
-                <li class="color_white">
-                    <a>
-                        <strong>NAVER</strong>
-                        <span></span>
-                    </a>
-                    <a>
-                        네이버 소개
-                        <span></span>
-                    </a>
-                    <a>
-                        주요연혁
-                        <span></span>
-                    </a>
-                    <a>
-                        수상내역
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>주요관계사</strong>
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>제휴제안</strong>
-                        <span></span>
-                    </a>
-                    <a href="">
-                        제휴제안 안내
-                        <span></span>
-                    </a>
-                    
-                    <a href="">
-                        제휴제안 등록
-                        <span></span>
-                    </a>
-                    <a href="">
-                        검토현황 조회
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>CONTACT</strong>
-                        <span></span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="snb" onmouseover="menuOpen(2)" onmouseout="menuClose()">
-        <div class="snb_menu_container">
-            <ul class="snb_naver_container">
-                <li class="color_white">
-                    <a>
-                        <strong>Featured<br>Services</strong>
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>For<br>Business</strong>
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>For<br>Creators</strong>
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>For<br>Developers</strong>
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>ALL<br>SERVICE</strong>
-                        <span></span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="snb" onmouseover="menuOpen(3)" onmouseout="menuClose()">
-        <div class="snb_menu_container">
-            <ul class="snb_naver_container">
-                <li class="color_white">
-                    <a>
-                        <strong>프로젝트 꽃</strong>
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>기업윤리</strong>
-                        <span></span>
-                    </a>
-                    <a href="">
-                        기업윤리규범
-                        <span></span>
-                    </a>
-                    <a href="">
-                        기업윤리 상담센터
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>프라이버시 센터</strong>
-                        <span></span>
-                    </a>
-                    <a href="">
-                        네이버 리포트
-                        <span></span>
-                    </a>
-                    <a href="">
-                        개인정보보호
-                        <span></span>
-                    </a>
-                    <a href="">
-                        정보보호인증
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white" class="">
-                    <a href="">
-                        <strong>동반성장</strong>
-                        <span></span>
-                    </a>
-                    <div class="menu_hr"></div>
-                    <a href="" class="margin_bottom_28px">
-                        <strong>환경</strong>
-                        <span></span>
-                    </a>
-                    <a href="">
-                        데이터센터 각
-                        <span></span>
-                    </a>
-                    <a href="">
-                        네이버사옥
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>With Naver</strong>
-                        <span></span>
-                    </a>
-                    <a href="">
-                        재단법인 해피빈
-                        <span></span>
-                    </a>
-                    <a href="">
-                        네이버 문화재단
-                        <span></span>
-                    </a>
-                    <a href="">
-                        커넥트 재단
-                        <span></span>
-                    </a>
-                    <a href="">
-                        접근성
-                        <span></span>
-                    </a>
-                    <a href="">
-                        네이버 라이브러리
-                        <span></span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="snb" onmouseover="menuOpen(4)" onmouseout="menuClose()">
-        <div class="snb_menu_container">
-            <ul class="snb_naver_container">
-                <li class="color_white">
-                    <a>
-                        <strong>보도자료</strong>
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>TV광고</strong>
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>미디어 행사</strong>
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>커뮤니케이션 채널</strong>
-                        <span></span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="snb" onmouseover="menuOpen(5)" onmouseout="menuClose()">
-        <div class="snb_menu_container">
-            <ul class="snb_naver_container">
-                <li class="color_white">
-                    <a>
-                        <strong>기업지배구조</strong>
-                        <span></span>
-                    </a>
-                    <a href="">
-                        주주구성
-                        <span></span>
-                    </a>
-                    <a href="">
-                        이사회
-                        <span></span>
-                    </a>
-                    <a href="">
-                        정관
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="" class="margin_bottom_18px">
-                        <strong>공시정보</strong>
-                        <span></span>
-                    </a>
-                    <div class="menu_hr"></div>
-                    <a href="" class="margin_bottom_18px">
-                        <strong>주가정보</strong>
-                        <span></span>
-                    </a>
-                    <div class="menu_hr"></div>
-                    <a href="" class="margin_bottom_18px">
-                        <strong>재무제표</strong>
-                        <span></span>
-                    </a>
-                    <div class="menu_hr"></div>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>IR일정</strong>
-                        <span></span>
-                    </a>
-                    <a href="">
-                        IR행사
-                        <span></span>
-                    </a>
-                    <a href="">
-                        IR MEETING
-                        <span></span>
-                    </a>
-                    <a href="">
-                        주주총회
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>IR자료실</strong>
-                        <span></span>
-                    </a>
-                    <a href="">
-                        실적발표
-                        <span></span>
-                    </a>
-                    <a href="">
-                        검사보고서
-                        <span></span>
-                    </a>
-                    <a href="">
-                        사업보고서
-                        <span></span>
-                    </a>
-                    <a href="">
-                        연차보고서
-                        <span></span>
-                    </a>
-                    <a href="">
-                        FAQ
-                        <span></span>
-                    </a>
-                </li>
-                <li class="color_white">
-                    <a href="">
-                        <strong>결산공고</strong>
-                        <span></span>
-                    </a>
-                    <div class="menu_hr"></div>
-                    <a href="" class="margin_bottom_18px">
-                        <strong>공고</strong>
-                        <span></span>
-                    </a>
-                    <div class="menu_hr"></div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</header>
-<div id="dimmed_effect"></div>
-<script>
-    var menuState = 0;
-
-    function menuClick(){
-
-        if(menuState == 0){
-        document.getElementsByClassName("btn_line")[0].style = " transform: rotate(-45deg); transform-origin: right; top:0; background-color:#fff"
-        document.getElementsByClassName("btn_line")[1].style = "  opacity: 0;"
-        document.getElementsByClassName("btn_line")[2].style = "  transform: rotate(43deg); transform-origin: right; bottom:2; background-color:#fff"
-        document.getElementsByClassName("hidden_menu")[0].style = "display:block; position:fixed;"
-        document.getElementById("header_container").style = "background-color:#0fb93c;"
-        document.getElementsByClassName("header_wrap")[0].style = "background-color:#0fb93c; margin:0; max-width:100%"
-        document.getElementsByClassName("header_lang")[0].style = "color:white;"
-        document.getElementById("gnb_container").style.display = "none"
-        document.getElementsByClassName("header_logo")[0].style = "left:8%"
-        document.getElementById("naver_logo").src ="img/header_logo_v2.png"
-        document.getElementById("dimmed_effect").style = "background-color: rgba(58, 62, 80, 0.97); position:fixed; z-index:3; top:0; left:0; bottom:0; right:0; display:block"
-        menuState = 1;
-        }
-        else if (menuState == 1 ) {document.getElementsByClassName("btn_line")[0].style = " transform: rotate(0deg); transform-origin: right;"
-        document.getElementsByClassName("btn_line")[1].style = "  opacity: 1;"
-        document.getElementsByClassName("btn_line")[2].style = "  transform: rotate(0deg); transform-origin: right;"
-        document.getElementsByClassName("hidden_menu")[0].style = "display:none"
-        document.getElementById("header_container").style = "background-color:#fff;"
-        document.getElementsByClassName("header_wrap")[0].style = "background-color:#fff;";
-        document.getElementsByClassName("header_lang")[0].style = "color:black;"
-        document.getElementById("gnb_container").style.display = "block"
-        document.getElementById("naver_logo").src ="img/header_logo.png"
-        document.getElementById("dimmed_effect").style = "background-color: transparent; position:none; z-index:3; top:0; left:0; bottom:0; right:0; display:block"
-        menuState = 0;
-        }
-    }
-    //snb script
-    var openIndex;
-    var lnbMenu = document.getElementsByClassName("snb")
-    function menuOpen(openIndex) {
-    for(i=0;i<lnbMenu.length;i++)
-    {document.getElementsByClassName("snb")[i].style.display="none"}
-    document.getElementsByClassName("snb")[openIndex - 1].style.display="block"
-    }
-
-    function menuClose(){
-        for(i=0;i<lnbMenu.length;i++)
-        {document.getElementsByClassName("snb")[i].style.display="none"}
-    }
-
-    //gnb scroll
-    var preYscroll = window.pageYOffset; // 기본은 항상 0이다.
-
-    window.onscroll = function() {
-        var presentYscroll = window.pageYOffset;
-        if (presentYscroll > preYscroll && presentYscroll > 80 && menuState == 0){
-            document.getElementById("header_container").style = "top:-80px;"
-           
-        } //스크롤 내릴 때 (현재 스크롤 좌표가 전 좌표보다 크거나 80보다 클 때)
-
-        else {
-            document.getElementById("header_container").style = "top:0px; ";
-            } //스크롤 올릴 때
-        preYscroll = presentYscroll;
-    }
-
-</script>
-<main id="main">
-
-
-<section class="slide_container">
-    <div class="myslide">
-        <div class="myslide_bg_01">
-            <div class="text_container">
-                <h1 class="p_36px_text color_white">삶의 가치를 높이는 <br>기술을 연구합니다.</h1>
-                <p class="p_15px_text color_white">당신이 더 가치 있는 일에 몰입할 수 있도록 <br>삶을 더 깊이 이해하는 기술을 만들어갑니다.</p>
-                <div class="slide_logo_01"></div>
-            </div>
-        </div>
-    </div>
-    <div class="myslide">
-        <div class="myslide_bg_02">
-            <div class="text_container">
-                <h1 class="p_36px_text color_white">무한한 가능성과의<br>만남을 기대합니다.</h1>
-                <p class="p_15px_text color_white">다양한 스몰비즈니스와 크리에이터의 가치가 발견되고<br>그 이름을 꽃 피울 수 있도록 함께합니다.</p>
-                <div class="slide_logo_02"></div>
-            </div>
-        </div>
-    </div>
-    <div class="myslide">
-        <div class="myslide_bg_03">
-            <div class="text_container">
-            <h1 class="p_36px_text color_white">생활환경지능 기술로<br>새로운 연결과 발견의 가능성을 만듭니다</h1>
-            <p class="p_15px_text color_white">네이버랩스는 사용자의 환경과 상황을 인지하고 이해하여<br>필요한 정보와 서비스를 알아서 자연스럽게 연결하는 기술을 연구합니다.</p>
-            <div class="slide_logo_03"></div>
-            </div>
-        </div>
-    </div>
-    <div class="myslide">
-        <div class="myslide_bg_04">
-            <div class="text_container">
-                <h1 class="p_36px_text color_white">생활환경지능 기술로<br>새로운 연결과 발견의 가능성을 만듭니다</h1>
-                <p class="p_15px_text color_white">네이버랩스는 사용자의 환경과 상황을 인지하고 이해하여<br>필요한 정보와 서비스를 알아서 자연스럽게 연결하는 기술을 연구합니다.</p>
-                <div class="slide_logo_04"></div>
-            </div>
-        </div>
-    </div>
-    <a class="button_next" onclick="slideNext()"></a>
-    <a class="button_prev" onclick="slidePrev()"></a>
-    <div class="slide_progressbar_bg">
-        <span class="slide_progressbar" id="current_progressbar"></span>
-    </div>
-    <div class="slide_number">
-        <strong id="slide_current_number">1 </strong> &nbsp; |&nbsp; 4
-    </div>
-</section>
-
-<script>
-        //ID로 만들 경우 한 부분만 변경가능하기 때문에 반복될 경우 class를 사용한다.
-        //document는 현재문서를 의미, getElementById ('')는 브리지 역할(finder), '.'은 연결점, 순서에 따라 결과가 달라질 수 있으니 순서는 중요하다.
-
-        var slideIndex = 1; //현재 보여지는 슬라이드의 넘버
-        var mySlide = document.getElementsByClassName('myslide') //slide_container 안에 있는 myslide 클래스를 순서대로 들어간다 대신 번호는 0부터 시작
-        var currentBar = 25;
-        setInterval(slideNext,5000)
-
-        function slideNext() {
-
-            console.log(mySlide.length); //length 안에 있는 요소들의 값이 몇개인지 알아냄
-
-            for (i=0 ; i<mySlide.length ; i++) {
-            mySlide[i].style.display="none";
-            }
-            
-            if (slideIndex == mySlide.length) { 
-            mySlide[0].style.display="block";
-            currentBar = 25;
-            document.getElementById("current_progressbar").style.width = currentBar + "%";
-            slideIndex = 1;  
-            document.getElementById("slide_current_number").innerHTML = slideIndex;        
-            }
-
-            else {
-                mySlide[slideIndex].style.display="block"; 
-                slideIndex = slideIndex + 1;
-                currentBar = slideIndex * 25;
-                document.getElementById("current_progressbar").style.width = currentBar + "%";
-                document.getElementById("slide_current_number").innerHTML = slideIndex;
-            }
-        }
-        function slidePrev() {
-
-           //0~4까지의 기본 display 상태는 none, for 은 반복문 
-            for (i=0 ; i<mySlide.length ; i++) {
-            mySlide[i].style.display="none";
-            }
-
-            //slideIndex가 1일경우 mySlide 의 display는 block으로 변경 후 slideIndex 4로 변경
-            if (slideIndex == 1) { 
-            mySlide[mySlide.length - 1].style.display="block";
-            slideIndex = mySlide.length;
-            currentBar = 100;
-            document.getElementById("current_progressbar").style.width = currentBar + "%"; 
-            document.getElementById("slide_current_number").innerHTML = slideIndex;         
-            }
-
-            else {
-                mySlide[slideIndex - 2].style.display="block"; 
-                slideIndex = slideIndex - 1;
-                currentBar = slideIndex * 25/1;
-                document.getElementById("current_progressbar").style.width = currentBar + "%";
-                document.getElementById("slide_current_number").innerHTML = slideIndex;
-            }
-            
-        }
-</script>
-
-
-<section class="main_content"> <!--main content section-->
-
-<ul class="summary_container">
-    <li class="summary_content">
-        <h6>NEWS</h6>
-        <div class="news_box">
-            <a class="h5_support_title"><strong> 네이버, 네이버 인증서 활용한 고지서 서비스로 다양한 공공기관, 보험사 등의 중요 문서 받아볼 수 있게 할 것</strong>
-            <p class="news_text color_grey p_15px_text"> 
-                 
-			네이버, 개인정보보호위원회 주최 ‘2020 개인정보보호 인식 주간 캠페인’ 참여
-            - 개인정보보호위원회, APPA가 함께 개최하는 ‘개인정보보호 주간’에 참여, 개인정보보호 생활 실천 수칙 공개 - 6월 17일, ‘캘리포니아주 소비자 프라이버시 보호법’ 주제로 온라인 교육 실시 … 글로벌 진출 준비하는 스타트업, 국내 인터넷 기업 인식 제고 도울 
-                                                    
-            </p>
-        </a>
-        </div>
-        <a class="summary_link h3_EB">바로가기
-            <span class="icon_arrow"></span>
-        </a>
-    </li>
-    <li class="summary_content">
-        <h6>CAREER</h6>
-        <div class="summary_content_container">
-            <p class="career_text p_18px_text color_lightblack">수 많은 사용자의 목소리에서<br>내 일의 자부심과 무게를 느낍니다.</p>
-        </div>
-        <a class="summary_link h3_EB">
-            네이버에서 일한다는 것
-            <span class="icon_arrow"></span>
-        </a>
-    </li>
-    <li class="summary_content">
-        <h6>STOCK</h6>
-        <div class="summary_content_container2">
-            <div class="price_box">
-                <p class="present_price p_36px_text">241,000</p>
-                <p class="figure_type p_footer color_lightblack">10,500</p>
-            </div>
-            <div class="price_date p_light color_grey">KRX 2020.05.22</div>
-        </div>
-        <a class="summary_link h3_EB">
-            주가정보
-            <span class="icon_arrow"></span>
-        </a>
-    </li>
-    <li class="summary_content">
-        <h6>결산공고</h6>
-        <div class="summary_content_container">
-            <p class="career_text p_18px_text color_lightblack">네이버 상세 재무상태표를<br>확인할 수 있습니다.</p>
-        </div>
-        <a class="summary_link h3_EB">
-            결산공고 보러가기
-            <span class="icon_arrow"></span>
-        </a>
-    </li>
-</ul>
-<div class="content_service">
-    <ul class="service_img_container">
-        <li class="service_thumbnail">
-            <a class="thumbnail_dimmed">
-                <dl class="thumbnail_content color_white">
-                    <dt><h5>5G 브레인리스 로봇 기술</h5></dt>
-                    <dd class="h3_EB">로봇의 두뇌를 클라우드로</dd>
-                </dl>
-            </a>
-        </li>
-        <li class="service_thumbnail">
-            <a class="thumbnail_dimmed">
-                <dl class="thumbnail_content color_white">
-                    <dt><h5>On-road intelligence</h5></dt>
-                    <dd class="h3_EB">도로 위 자율주행을 위한 통합 솔루션</dd>
-                </dl>
-            </a>
-        </li>
-        <li class="service_thumbnail">
-            <a class="thumbnail_dimmed">
-                <dl class="thumbnail_content color_white">
-                    <dt><h5>클로바 스페셜 에디션</h5></dt>
-                    <dd class="h3_EB">음악 추천부터 네이버 검색까지</dd>
-                </dl>
-            </a>
-        </li>
-        <li class="service_thumbnail">
-            <a class="thumbnail_dimmed">
-                <dl class="thumbnail_content color_white">
-                    <dt><h5>네이버 웨일</h5></dt>
-                    <dd class="h3_EB">인터넷의 새로운 시작</dd>
-                </dl>
-            </a>
-        </li>
-        <li class="service_thumbnail">
-            <a class="thumbnail_dimmed">
-                <dl class="thumbnail_content color_white">
-                    <dt><h5>데이터센터 각</h5></dt>
-                    <dd class="h3_EB">네이버의 공간이야기</dd>
-                </dl>
-            </a>
-        </li>
-        <li class="service_thumbnail">
-            <a class="thumbnail_dimmed">
-                <dl class="thumbnail_content color_white">
-                    <dt><h5>그린팩토리</h5></dt>
-                    <dd class="h3_EB">네이버의 공간이야기</dd>
-                </dl>
-            </a>
-        </li>
-        <li class="service_thumbnail">
-            <a class="thumbnail_dimmed">
-                <dl class="thumbnail_content color_white">
-                    <dt><h5>네이버 웹툰</h5></dt>
-                    <dd class="h3_EB">매일매일 새로운 재미</dd>
-                </dl>
-            </a>
-        </li>
-        <li class="service_thumbnail">
-            <a class="thumbnail_dimmed">
-                <dl class="thumbnail_content color_white">
-                    <dt><h5>프로젝트 꽃</h5></dt>
-                    <dd class="h3_EB">가치의 발견과 성장</dd>
-                </dl>
-            </a>
-        </li>
-        <li class="service_thumbnail">
-            <a class="thumbnail_dimmed">
-                <dl class="thumbnail_content color_white">
-                    <dt><h5>오디오클립</h5></dt>
-                    <dd class="h3_EB">즐거움이 들린다</dd>
-                </dl>
-            </a>
-        </li>
-    </ul>
-
-</div>
-<div class="content_support">
-    <h3 class="h3_bold color_black">기술로 다양성을 꽃피우는 플랫폼</h3>
-    <p class="color_lightblack">
-    개인의 다양한 가능성이 의미있는 성공으로 꽃 피울 수 있도록<br>
-     네이버가 서비스와 기술플랫폼을 통해 더 가까이 서포트(SUPPORT) 합니다.
-    </p>
-    <ul class="support_list_container">
-        <li class="support_list_box">
-            <a class="creators">
-                <dl class="h3_EB">
-                    <dt class="color_naver">Creators With Naver</dt>
-                    <dd class="color_grey">다양한 분야의 창작자들이 그들의 이름을<br>빛낼 수 있도록 네이버가 함께합니다.</dd>
-                </dl>
-            </a>
-        </li>
-        <li class="support_list_box">
-            <a class="creators">
-                <dl class="h3_EB ">
-                    <dt class="color_naver">Business With Naver</dt>
-                    <dd class="color_grey">파트너들의 성공적인 창업과<br>지속가능한 사업을 위해 노력합니다.</dd>
-                </dl>
-            </a>
-        </li>
-        <li class="support_list_box">
-            <a class="creators">
-                <dl class="h3_EB">
-                    <dt class="color_naver">Developers With Naver</dt>
-                    <dd class="color_grey">개발자와 개발사들의 지식과 경험을<br>공유하며 함께 성장해 나갑니다.</dd>
-                </dl>
-            </a>
-        </li>
-        <li class="support_list_box">
-            <a class="creators">
-                <dl class="h3_EB ">
-                    <dt class="color_naver">프로젝트 꽃</dt>
-                    <dd class="color_grey">다양한 스몰비즈니스와 크리에이터들이<br>꽃 피울 수 있도록 네이버가 함께 합니다.</dd>
-                </dl>
-            </a>
-        </li>
-    </ul>
-    
-</div>
-
-</section>
-
-</main>
-
-<footer>
-    <div class="footer_container">
-        <a href="" class="footer_logo">
-            <img src="img/footer_logo.png" alt="">
-        </a>
-        <ul class="footer_left">
-            <li><a href="https://www.navercorp.com/naver/proposalGuide" class="p_footer color_grey">제휴제안</a></li>
-            <li><a href="https://www.navercorp.com/value/ethicsLineCenter"  class="p_footer color_grey">기업윤리 상담센터</a></li>
-            <li><a href="https://www.navercorp.com/policy/person"  class="p_footer color_grey">개인정보 처리방침</a></li>
+            </li>
+            <li class="gnb_content" onmouseover="headerOpen(1)" onmouseout="headerClose(1)" onclick="m_HeaderOpen(1)">
+                <div class="gnb_content_container">
+                    <h6 class="color_white gnb_title"><a href="">THE BRAND</a></h6>
+                    <div class="gnb_arrow">
+                        <div class="arrow_left"></div>
+                        <div class="arrow_right"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="gnb_content" onmouseover="headerOpen(2)" onmouseout="headerClose(2)" onclick="m_HeaderOpen(2)">
+                <div class="gnb_content_container">
+                    <h6 class="color_white gnb_title"><a href="">SHOPPING</a></h6>
+                    <div class="gnb_arrow">
+                        <div class="arrow_left"></div>
+                        <div class="arrow_right"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="gnb_content" onmouseover="headerOpen(3)" onmouseout="headerClose(3)" onclick="m_HeaderOpen(3)">
+                <div class="gnb_content_container">
+                    <h6 class="color_white gnb_title"><a href="">OWNERS</a></h6>
+                    <div class="gnb_arrow">
+                        <div class="arrow_left"></div>
+                        <div class="arrow_right"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="gnb_content" onmouseover="headerOpen(4)" onmouseout="headerClose(4)" onclick="m_HeaderOpen(4)">
+                <div class="gnb_content_container">
+                    <h6 class="color_white gnb_title"><a href="">DIGITAL</a></h6>
+                    <div class="gnb_arrow">
+                        <div class="arrow_left"></div>
+                        <div class="arrow_right"></div>
+                    </div>
+                </div>
+            </li>
         </ul>
-        <p class="footer_copy">
-        </p>
-        <ul class="footer_right">
-            <li>
-                <a href="" class="p_footer">자회사 바로가기</a>
+        <h5 class="sign_in color_white">
+            <a href="" class="sign_in_text">
+                SIGN IN
+                <div class="sign_in_hr"></div>
+            </a>
+        </h5>
+        <div class="m_navi_container">
+            <span class="m_sign_in_icon">
+                <svg viewBox="0 0 32 32">
+                    <path d="M16 22c5 0 9-4.94 9-11S21 0 16 0a8.23 8.23 0 0 0-6.44 3.3A12.34 12.34 0 0 0 7 11c0 6.06 4 11 9 11zm0-20c3.86 0 7 4 7 9s-3.14 9-7 9-7-4-7-9 3.14-9 7-9z" fill="white"></path>
+                    <path d="M23 20a1 1 0 0 0 0 2 7 7 0 0 1 7 7 1 1 0 0 1-1 1H3a1 1 0 0 1-1-1 7 7 0 0 1 7-7 1 1 0 0 0 0-2 9 9 0 0 0-9 9 3 3 0 0 0 3 3h26a3 3 0 0 0 3-3 9 9 0 0 0-9-9z" fill="white"></path>
+                </svg>
+            </span>
+            <button class="m_menu_container" onclick="menuToggle()">
+                <span class="m_menu_hr"></span>
+                <span class="m_menu_hr"></span>
+                <span class="m_menu_hr"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="snb" onmouseover="headerOpen(0)" onmouseout="headerClose(0)">
+        <ul class="snb_container">
+            <li class="snb_box">
+                <span class="header_hr_top"></span>
+                <span class="header_hr_left"></span>
+                <span class="header_hr_bottom"></span>
+                <span class="header_hr_right"></span>
+                <span class="m_back_btn" onclick="m_HeaderClose(0)">
+                    <span class="m_arrow_up"></span>
+                    <span class="m_arrow_down"></span>
+                    <p class="color_white m_back_text">BACK</p>
+                </span>
+                <div class="model_text">
+                    <h3 class="color_brown">GENESIS</h3>
+                    <h4 class="color_brown">gv80</h4>
+                </div>
+                <div class="snb_img_box">
+                    <img src="img/gv80.png" class="snb_car_img">
+                    <span class="m_snb_car_text color_brown">GENESIS GV80</span>
+                </div>
+                <div class="hr_line"></div>
+                <div class="snb_explore">
+                    <h4>EXPOLRE</h4>
+                </div>
+            </li>
+            <li class="snb_box">
+                <span class="header_hr_top"></span>
+                <span class="header_hr_left"></span>
+                <span class="header_hr_bottom"></span>
+                <span class="header_hr_right"></span>
+                <div class="model_text">
+                    <h3 class="color_brown">GENESIS</h3>
+                    <h4 class="color_brown">G70</h4>
+                </div>
+                <div class="snb_img_box">
+                    <img src="img/g70.png" class="snb_car_img">
+                    <span class="m_snb_car_text color_brown">GENESIS G70</span>
+                </div>
+                <div class="hr_line"></div>
+                <div class="snb_explore">
+                    <h4>EXPOLRE</h4>
+                </div>
+            </li>
+            <li class="snb_box">
+                <span class="header_hr_top"></span>
+                <span class="header_hr_left"></span>
+                <span class="header_hr_bottom"></span>
+                <span class="header_hr_right"></span>
+                <div class="model_text">
+                    <h3 class="color_brown">GENESIS</h3>
+                    <h4 class="color_brown">G80</h4>
+                </div>
+                <div class="snb_img_box">
+                    <img src="img/g80.png" class="snb_car_img">
+                    <span class="m_snb_car_text color_brown">GENESIS G80</span>
+                </div>
+                <div class="hr_line"></div>
+                <div class="snb_explore">
+                    <h4>EXPOLRE</h4>
+                </div>
+            </li>
+            <li class="snb_box">
+                <span class="header_hr_top"></span>
+                <span class="header_hr_left"></span>
+                <span class="header_hr_bottom"></span>
+                <span class="header_hr_right"></span>
+                <div class="model_text">
+                    <h3 class="color_brown">GENESIS</h3>
+                    <h4 class="color_brown">G90</h4>
+                </div>
+                <div class="snb_img_box">
+                    <img src="img/g90.png" class="snb_car_img">
+                    <span class="m_snb_car_text color_brown">GENESIS G90</span>
+                </div>
+                <div class="hr_line"></div>
+                <div class="snb_explore">
+                    <h4>EXPOLRE</h4>
+                </div>
             </li>
         </ul>
     </div>
+    <div class="snb" onmouseover="headerOpen(1)" onmouseout="headerClose(1)">
+        <ul class="snb_container">
+            <li class="brand_box">
+                <span class="m_back_btn" onclick="m_HeaderClose(1)">
+                    <span class="m_arrow_up"></span>
+                    <span class="m_arrow_down"></span>
+                    <p class="color_white m_back_text">BACK</p>
+                </span>
+                <h3>
+                    <a href="index.html" class="color_white">
+                        뉴스 및 이벤트
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white">
+                        CONCEPT CAR
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white">
+                        제네시스 스튜디오
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white">
+                        제네시스 모터쇼
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white"> 
+                        제네시스 로드트립
+                    </a>
+                </h3>
+            </li>
+        </ul>
+    </div>
+    <div class="snb" onmouseover="headerOpen(2)" onmouseout="headerClose(2)">
+        <ul class="snb_container">
+            <li class="brand_box">
+                <span class="m_back_btn" onclick="m_HeaderClose(2)">
+                    <span class="m_arrow_up"></span>
+                    <span class="m_arrow_down"></span>
+                    <p class="color_white m_back_text">BACK</p>
+                </span>
+                <h3>
+                    <a href="index.html" class="color_white">
+                        제네시스 구매 프로그램
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white">
+                        견적내기
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white">
+                        구매 상담 신청
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white">
+                        시승 신청
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white"> 
+                        제네시스 강남
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white"> 
+                        전시장 / 센터찾기
+                    </a>
+                </h3>
+            </li>
+            <li class="brand_box">
+                <h3>
+                    <a href="index.html" class="color_white">
+                        카탈로그/가격표 다운로드
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white">
+                        FAQ
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white">
+                        사양 조회하기
+                    </a>
+                </h3>
+            </li>
+        </ul>
+    </div>
+    <div class="snb" onmouseover="headerOpen(3)" onmouseout="headerClose(3)">
+        <ul class="snb_container">
+            <li class="brand_box">
+                <span class="m_back_btn" onclick="m_HeaderClose(3)">
+                    <span class="m_arrow_up"></span>
+                    <span class="m_arrow_down"></span>
+                    <p class="color_white m_back_text">BACK</p>
+                </span>
+                <h3>
+                    <a href="index.html" class="color_white">
+                        제네시스 멤버십
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white">
+                        제네시스 멤버스 몰
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white">
+                        오너스 매뉴얼 다운로드
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white">
+                        네비게이션 업데이트
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white"> 
+                        자동차 교환·환불 중재 제도 안내
+                    </a>
+                </h3>
+
+            </li>
+        </ul>
+    </div>
+    <div class="snb" onmouseover="headerOpen(4)" onmouseout="headerClose(4)">
+        <ul class="snb_container">
+            <li class="brand_box">
+                <span class="m_back_btn" onclick="m_HeaderClose(4)">
+                    <span class="m_arrow_up"></span>
+                    <span class="m_arrow_down"></span>
+                    <p class="color_white m_back_text">BACK</p>
+                </span>
+                <h3>
+                    <a href="index.html" class="color_white">
+                        제네시스 커넥티드 서비스
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white">
+                        제네시스 디지털 키
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white">
+                        제네시스 카페이
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white">
+                        제네시스 빌트인 캠
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" class="color_white"> 
+                        제네시스 카투홈/홈투카
+                    </a>
+                </h3>
+            </li>
+        </ul>
+    </div>
+<!--snb page open js-->
+
+<script>
+    var snbIndex = document.getElementsByClassName("snb")
+    var gnbState = document.getElementById("gnb")
+    var menuHrIndex = document.getElementsByClassName("m_menu_hr")
+    var snbState = 0;
+    var menuState = 0;
+    var openIndex;
+    
+    /*snb 메뉴 열기*/
+    function headerOpen(openIndex) {
+    if(document.body.clientWidth > 1024) {
+        for(i=0; i < snbIndex.length; i++) {
+            snbIndex[i].style = "visibility: hidden;"
+            }
+            snbIndex[openIndex].style = "visibility: visible"
+        }
+    }
+    /*snb 메뉴 닫기*/
+    function headerClose(){
+        if(document.body.clientWidth > 1024) {
+        for(i=0; i < snbIndex.length; i++) {
+            snbIndex[i].style = "visibility: hidden;"}
+        }
+    }
+
+    /*snb 메뉴 열기*/
+    function m_HeaderOpen(openIndex) {
+    if(document.body.clientWidth < 1024) {
+        if (snbState == 0) {
+                gnbState.style = "left:-100%; top:64px; transition: left 0.5s";
+                snbIndex[openIndex].style = "visibility: visible; left:0%; transition: left 0.5s";
+                snbState = 1;
+            }
+        }
+    }
+    /*snb 메뉴 닫기*/
+    function m_HeaderClose(openIndex){
+        if(document.body.clientWidth < 1024) {
+            
+            if (snbState == 1) {
+                gnbState.style = "left:0; top:64px; transition: left 0.5s";
+                snbIndex[openIndex].style = "visibility: visible; left:100%; transition: left 0.5s";
+                snbState = 0;
+            }
+        }
+    }
+
+    /*모바일 메뉴 toggle*/
+    function menuToggle() {       
+
+        if(menuState == 0) {
+            menuHrIndex[0].style = "transform:rotate(-41deg);";
+            menuHrIndex[1].style = "opacity:0";
+            menuHrIndex[2].style = "transform:rotate(41deg);";
+            gnbState.style = "top:64px;";
+            document.getElementById("body").style = "height:100vh; overflow:hidden; background-color:#141414"
+            menuState = 1;
+            console.log(menuState)
+        }
+        
+        else if (menuState == 1) {
+            menuHrIndex[0].style = "transform:rotate(0deg); transform-origin:right";
+            menuHrIndex[1].style = "opacity:1";
+            menuHrIndex[2].style = "transform:rotate(0deg); transform-origin:right bottom";
+            gnbState.style = "top:-100vh";
+            document.getElementById("body").style = "height:auto; overflow:visible"
+            menuState = 0;
+        }
+
+        if (snbState = 1 && menuState == 0){
+            for (i=0; i<snbIndex.length; i++)
+            snbIndex[i].style = "visibility:hidden;";
+            gnbState.style = "top:-100vh; transition:top 0.5s;";
+        }
+    }
+    
+</script>
+</header>
+
+<main>
+<!--main_container_section-->
+<section class="main_container">
+    <div class="main_bg_container">        
+        <ul class="main_text_container">
+            <li class="main_title color_white">
+                <h2>THE ALL-NEW GENESIS</h2>
+                <h1>G80</h1>
+            </li>
+            <li class="btn_container">
+                <a class="hero_btn" href="">
+                    <h4>자세히보기</h4>
+                </a>
+                <a class="hero_btn color_white">
+                    <h4>런칭 영상 보기</h4>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="arrow_container" onclick="moveYscroll()">
+        <span class="arrow"></span>
+    </div>
+
+    <script>
+
+        function moveYscroll() {
+            if(document.body.clientWidth > 1024){
+            window.scrollTo({top:976,behavior:'smooth'})}
+            if(document.body.clientWidth < 1024){
+            window.scrollTo({left:500,behavior:'smooth'})}
+        }
+    </script>
+</section>
+
+<!--video_section-->
+<section class="video_container">
+    <iframe id="player" src="https://www.youtube.com/embed/PSgOtR6m0lQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="poster_img">
+        <button id="video_btn" onclick="videoPlay()">
+            <span class="video_icon">
+                <svg viewBox="0 0 14.01 23" style="width: 8px; height:13px;">
+                    <path d="M0,0,14,11.5,0,23Z" fill="white"></path>
+                </svg>
+            </span>
+        </button>
+    </div>
+
+    <script>
+        var vid = document.getElementById("player");
+
+        function videoPlay() {
+            document.getElementById("poster_img").style = "display:none"
+            vid.play()
+        }
+        
+    </script>
+</section>
+
+<!--slide_section-->
+<section class="slide">
+    <div class="slide_container">
+        <div class="myslide">
+            <div class="myslide_bg_01"></div>
+        </div>
+        <div class="myslide">
+            <div class="myslide_bg_02"></div>
+        </div>
+        <div class="myslide">
+            <div class="myslide_bg_03"></div>
+        </div>
+        <div class="myslide">
+            <div class="myslide_bg_04"></div>
+        </div>
+        <div class="myslide">
+            <div class="myslide_bg_05"></div>
+        </div> 
+    </div>
+    <div class="button_container">
+        <a class="button_point" ></a>
+        <a class="button_point" ></a>
+        <a class="button_point" ></a>
+        <a class="button_point" ></a>
+        <a class="button_point" ></a>
+    </div>
+
+<!--slide_js-->
+<script>
+        var currentSlideIndex = 0; // 1번 슬라이드를 0으로 정의
+        var nextSlideIndex; //사용자가 클릭했을 때 클릭한 슬라이드 번호 => 0에서 시작
+        var mySlide = document.getElementsByClassName("myslide")
+        var buttonPoint = document.getElementsByClassName("button_point")
+
+        console.log("currentSlideIndex" + currentSlideIndex)
+        console.log("nextSlideIndex" + nextSlideIndex)
+        
+        window.onload = function() {
+            buttonPoint[0].addEventListener ('click',function(){slideMove(0)});
+            buttonPoint[1].addEventListener ('click',function(){slideMove(1)});
+            buttonPoint[2].addEventListener ('click',function(){slideMove(2)});
+            buttonPoint[3].addEventListener ('click',function(){slideMove(3)});
+            buttonPoint[4].addEventListener ('click',function(){slideMove(4)});
+        };
+
+        function slideMove(clickIndex) {
+                   
+
+        nextSlideIndex = clickIndex; // 사용자가 누른 슬라이드 번호
+        indexDifference = nextSlideIndex - currentSlideIndex; // 슬라이드간의 격차
+
+        console.log("currentSlideIndex" + currentSlideIndex)
+        console.log("nextSlideIndex" + nextSlideIndex)
+        console.log("indexDifference" + indexDifference)
+
+            //슬라이드간의 격차가 1일 경우
+            if(indexDifference == 1) {
+            
+            for (i=0; i<mySlide.length; i++) {
+                mySlide[i].style.zIndex = i + 1;
+            }
+
+            mySlide[nextSlideIndex].style = "left:0px; transition: left 0.5s";
+            setTimeout(function() {mySlide[currentSlideIndex].style = "left:-100%;";
+            currentSlideIndex = nextSlideIndex;}, 500);
+            
+            }
+            //슬라이드간의 격차가 1보다 클 경우
+            else if (indexDifference > 1) {
+            for (i=0; i < indexDifference - 1; i++) {
+                    mySlide[currentSlideIndex + i + 1].style = "left:-100%; transition: left 0.5s" + " " + i*0.19 + "s;";
+                }
+
+                for (i=0; i<mySlide.length; i++) {
+                mySlide[i].style.zIndex = i + 1;
+            }
+
+            mySlide[nextSlideIndex].style = "left:0px; transition: left 0.5s" + " " + (indexDifference - 2)*0.2 + "s;";
+            setTimeout(function() {mySlide[currentSlideIndex].style = "left:-100%;";
+            currentSlideIndex = nextSlideIndex;}, 500);
+            }
+            //슬라이드간의 격차가 -1일 경우
+            else if (indexDifference == -1) {
+            // z-index값 설정
+            for (i=0; i < mySlide.length; i++) {
+                mySlide[i].style.zIndex = mySlide.length - i;
+            }
+            mySlide[nextSlideIndex].style = "left:0px; transition: left 0.5s; z-index:" + (mySlide.length - nextSlideIndex) + ";";
+            setTimeout(function() {mySlide[currentSlideIndex].style = "left:100%;";
+            currentSlideIndex = nextSlideIndex;}, 500);
+
+            }
+            //슬라이드간의 격차가 -1보다 작을 경우
+            else if (indexDifference < -1) {
+                for (i=0; i < mySlide.length; i++) {
+                mySlide[i].style.zIndex = mySlide.length - i;
+            }
+                for (i=0; i < Math.abs(indexDifference) - 1 ; i++) {
+                    mySlide[currentSlideIndex - i - 1].style = "left:100%; transition: left 0.5s" + " " + i*0.19 + "s;";
+                }
+             
+            
+            mySlide[nextSlideIndex].style = "left:0px; transition: left 0.5s" + " " + (Math.abs(indexDifference) - 2)*0.2 + "s; z-index:" + (mySlide.length - nextSlideIndex) + ";";
+
+            setTimeout(function() {mySlide[currentSlideIndex].style = "left:100%;";
+            currentSlideIndex = nextSlideIndex;}, 500);
+            }
+
+            //공통효과
+            for (i=0;i<mySlide.length;i++) {
+            document.getElementsByClassName("button_point")[i].style = "width:6px; height:6px; opacitiy:0.6"}
+            document.getElementsByClassName("button_point")[clickIndex].style = "width:9px; height:9px; opacitiy:1"
+        }
+
+
+</script>
+</section>
+
+<!--news_event_section-->
+<section id="news_event">
+    <div class="color_white news_event_title">
+        <h2>뉴스 및 이벤트</h2>
+        <h6>바로가기</h6>
+    </div>
+    <div class="g_title">
+        <h2 class="color_white">GENESIS MODELS</h2>
+    </div>
+    <div class="g_model">
+        <ul class="g_model_container">
+            <li class="g_model_box">
+                <span class="box_border_top"></span>
+                <span class="box_border_right"></span>
+                <span class="box_border_bottom"></span>
+                <span class="box_border_left"></span>
+                <div class="g_model_text">
+                    <h3 class="color_brown">GENESIS</h3>
+                    <h4 class="color_brown">gv80</h4>
+                </div>
+                <div class="g_model_img_box">
+                    <img src="img/gv80.png" class="g_model_car_img">
+                </div>
+                <div class="hr_line"></div>
+                <div class="explore_box">
+                    <h4>EXPOLRE</h4>
+                </div>
+            </li>
+            <li class="g_model_box">
+                <span class="box_border_top"></span>
+                <span class="box_border_right"></span>
+                <span class="box_border_bottom"></span>
+                <span class="box_border_left"></span>
+                <div class="g_model_text">
+                    <h3 class="color_brown">GENESIS</h3>
+                    <h4 class="color_brown">G70</h4>
+                </div>
+                <div class="g_model_img_box">
+                    <img src="img/g70.png" class="g_model_car_img">
+                </div>
+                <div class="hr_line"></div>
+                <div class="explore_box">
+                    <h4>EXPOLRE</h4>
+                </div>
+            </li>
+            <li class="g_model_box">
+                <span class="box_border_top"></span>
+                <span class="box_border_right"></span>
+                <span class="box_border_bottom"></span>
+                <span class="box_border_left"></span>
+                <div class="g_model_text">
+                    <h3 class="color_brown">GENESIS</h3>
+                    <h4 class="color_brown">G80</h4>
+                </div>
+                <div class="g_model_img_box">
+                    <img src="img/g80.png" class="g_model_car_img">
+                </div>
+                <div class="hr_line"></div>
+                <div class="explore_box">
+                    <h4>EXPOLRE</h4>
+                </div>
+            </li>
+            <li class="g_model_box">
+                <span class="box_border_top"></span>
+                <span class="box_border_right"></span>
+                <span class="box_border_bottom"></span>
+                <span class="box_border_left"></span>
+                <div class="g_model_text">
+                    <h3 class="color_brown">GENESIS</h3>
+                    <h4 class="color_brown">G90</h4>
+                </div>
+                <div class="g_model_img_box">
+                    <img src="img/g90.png" class="g_model_car_img">
+                </div>
+                <div class="hr_line"></div>
+                <div class="explore_box">
+                    <h4>EXPOLRE</h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div></div>
+</section>
+
+<!--the_brand_section-->
+<section class="the_brand">
+    <div class="brand_container">
+        <div class="brand_text_container">
+            <h4 class="color_white">GENESIS</h4>
+            <h2 class="color_brown">THE BRAND</h2>
+            <h4 class="color_white">제네시스는 높은 품격과 안목을 가진 사람들을 위한 최상의 자동차와 그에 관련된 제품 및 서비스를 만들어내고자 합니다</h4>
+            <div class="brand_btn">
+                <p>GENESIS 브랜드 알아보기</p>
+            </div>
+        </div>
+        <div class="brand_img_container"></div>
+    </div>
+</section>
+
+<!--G_awards_section-->
+<section id="g_awards" style="height: 100vh;">
+    <div class="color_white g_awards_title">
+        <h2>GENESIS MOTOR SHOW & AWARDS</h2>
+    </div>
+    <ul class="g_history_container">
+        <div id="m_container">
+            <div class="history_close_container"><p onclick="mContainerClose()" id="history_close">x</p></div>
+            <div id="m_history_content">
+                <li class="g_history_bg_container">
+                    <img src="img/m_history_01.jpg" alt="" class="m_history_img">
+                        <div class="g_history_text_container">
+                        <h2 class="color_brown">IIHS TOP SAFETY PICK +</h2>
+                        <p class="color_white">미국 고속도로 안전보험협회가 발표한 충돌 평가에서 가장 안전한 차량에 부여하는 ‘톱 세이프티 픽 플러스(Top Safety Pick+)’에 G70, G80, G90 제네시스 세단 전 차종이 최고 안전한 차로 선정되었습니다. *G70의 경우 2019년 12월 이후 모델에 해당됩니다.</p>
+                </div>
+                </li>
+                <li class="g_history_bg_container">
+                    <img src="img/m_history_02.jpg" alt="" class="m_history_img">
+                        <div class="g_history_text_container">
+                        <h2 class="color_brown">NORTH AMERICAN CAR OF THE YEAR 2019</h2>
+                        <p class="color_white">G70가 디트로이트 모터쇼에서 '승용부문 북미 올해의 차'를 수상하였습니다.
+                        <p class="color_white"><a href="">자세히 보기</a></p>
+                    </div>
+                </li>
+                <li class="g_history_bg_container">
+                    <img src="img/m_history_03.jpg" alt="" class="m_history_img">
+                    <div class="g_history_text_container">
+                        <h2 class="color_brown">NEW YORK<br>AUTO SHOW 2019</h2>
+                        <p class="color_white">뉴욕 모터쇼 전야 허드슨 야드에서 ‘스몰 카, 빅 애플(Small Car, Big Apple)’의 테마로 프리미엄 씨티카 ‘민트 콘셉트’의 언베일링 행사가 열렸습니다.
+                        <p class="color_white"><a href="">자세히 보기</a></p>
+                    </div>
+                </li>
+                <li class="g_history_bg_container">
+                    <img src="img/m_history_04.jpg" alt="" class="m_history_img">
+                    <div class="g_history_text_container">
+                        <h2 class="color_brown">SEOUL<br>MOTOR SHOW 2019</h2>
+                        <p class="color_white">제네시스 커먼부스가 2018 레드닷 어워드 ‘커뮤니케이션 디자인’ 부문을 수상하였습니다.
+                        <p class="color_white"><a href="">자세히 보기</a></p>
+                    </div>
+                </li>
+                <li class="g_history_bg_container">
+                    <img src="img/m_history_05.jpg" alt="" class="m_history_img">
+                    <div class="g_history_text_container">
+                        <h2 class="color_brown">BUSAN<br>MOTOR SHOW 2018</h2>
+                        <p class="color_white">부산 모터쇼 제네시스관에서 아시아 최초로 공개되는 2 도어 전기차 기반 GT 콘셉트카, 에센시아 콘셉트와 제네시스 전차종 라인업이 전시되었습니다.
+                        <p class="color_white"><a href="">자세히 보기</a></p>
+                    </div>
+                </li>
+            </div>
+            <ul id="g_history_btn_container">
+                <li class="g_history_btn" onclick="mobileShowPage(0)"></li>
+                <li class="g_history_btn" onclick="mobileShowPage(1)"></li>
+                <li class="g_history_btn" onclick="mobileShowPage(2)"></li>
+                <li class="g_history_btn" onclick="mobileShowPage(3)"></li>
+                <li class="g_history_btn" onclick="mobileShowPage(4)"></li>
+            </ul>
+        </div>
+    </ul>
+    <ul class="g_history_content">
+        <li id="g_history_hr">
+            <span id="current_hr"></span>
+        </li>
+        <li class="g_history_detail">
+            <p class="color_brown detail_text" onclick="showPage(0)">IIHS TOP SAFETY PICK +</p>
+            <p class="color_white detail_text" onclick="showPage(1)">NORTH AMERICAN CAR OF THE YEAR 2019</p>
+            <p class="color_white detail_text" onclick="showPage(2)">NEW YORK<br> AUTO SHOW 2019</p>
+            <p class="color_white detail_text" onclick="showPage(3)">SEOUL<br> MOTOR SHOW 2019</p>
+            <p class="color_white detail_text" onclick="showPage(4)">BUSAN<br>MOTOR SHOW 2018</p>
+        </li>
+    </ul>
+    <script>
+        var historyIndex;
+        var historyBg = document.getElementsByClassName("g_history_bg_container");
+        var textIndex = document.getElementsByClassName("detail_text");
+        var mContainer = document.getElementById("m_container");
+        var currentBtn = document.getElementsByClassName("history_current_page_btn")
+
+        function showPage(historyIndex) {
+            if(document.body.clientWidth > 1024) {
+            /*배경체인지*/
+            for(i=0;i<historyBg.length;i++) {
+                historyBg[i].style = "z-index:0; opacity:0"
+            }
+            historyBg[historyIndex].style ="z-index:1; opacity:1; transition:all 0.8s"
+
+            /*텍스트 컬러 변경*/
+            for(i=0;i<textIndex.length;i++) {
+                textIndex[i].style = "color:white"}
+            textIndex[historyIndex].style = "color:#cd9a81"
+
+            /*currentBar*/
+            currentBar = historyIndex * 16
+            document.getElementById("current_hr").style.left = currentBar + "%";
+            }
+
+            if(document.body.clientWidth < 1024) {
+            document.getElementById("body").style = "height:100vh; overflow:hidden;";
+            mContainer.style = "opacity:1; position:fixed; z-index:10;";
+            document.getElementById("m_history_content").style = "transform: translateX(0)";
+            mContainer.scrollTo({left:414*historyIndex,behavior:'smooth'});
+            }
+            if(document.body.clientWidth < 769) {
+            document.getElementById("m_history_content").style = "transform: translateX(0)";
+            mContainer.scrollTo({left:768*historyIndex,behavior:'smooth'});
+            }
+            if(document.body.clientWidth < 415) {
+            document.getElementById("m_history_content").style = "transform: translateX(0)";
+            mContainer.scrollTo({left:414*historyIndex,behavior:'smooth'});
+            }
+            if(document.body.clientWidth < 376) {
+            document.getElementById("m_history_content").style = "transform: translateX(0)";
+            mContainer.scrollTo({left:375*historyIndex,behavior:'smooth'});
+            }
+            if(document.body.clientWidth < 321) {
+            document.getElementById("m_history_content").style = "transform: translateX(0)";
+            mContainer.scrollTo({left:320*historyIndex,behavior:'smooth'});
+            }
+        }
+
+        function mobileShowPage(btnIndex) {
+            if(document.body.clientWidth < 769) {
+                mContainer.scrollTo({left:768*btnIndex,behavior:'smooth'});
+            }
+            if(document.body.clientWidth < 415) {
+                mContainer.scrollTo({left:414*btnIndex,behavior:'smooth'});
+            }
+            if(document.body.clientWidth < 376) {
+                mContainer.scrollTo({left:375*btnIndex,behavior:'smooth'});
+            }
+            if(document.body.clientWidth < 321) {
+                mContainer.scrollTo({left:320*btnIndex,behavior:'smooth'});
+            }
+            
+        }
+
+        function mContainerClose() {
+            document.getElementById("body").style = "height:auto; overflow:visible;";
+            mContainer.style = "opacity:0; position:static; z-index:0"
+        }
+
+</script>
+
+
+
+</section>
+
+<!--sub_content-->
+
+<section class="sub_content">
+
+    <ul id="sub_content_container">
+        <li class="sub_content_box color_white" id="sub_box">
+            <img src="img/sub_content_01.jpg" alt="sub_content_01_image" class="sub_content_img">
+            <h3>GENESIS OWNERS</h3>
+            <p>제네시스 오너분들께만 주어지는 특별한 혜택과 이상적인 경험을 선사합니다.</p>
+            <p>
+                <a href="https://www.genesis.com/kr/ko/owners.html">
+                    자세히 보기
+                    <span class="sub_content_hr"></span>
+                </a>
+            </p>
+        </li>
+        <li class="sub_content_box color_white">
+            <img src="img/sub_content_02.jpg" alt="sub_content_01_image" class="sub_content_img">
+            <h3>SHOPPING TOOLS</h3>
+            <p>제네시스 차량의 견적, 구매상담 신청, 시승 신청 뿐 아니라 제네시스 강남 방문 예약 등 당신만의 제네시스를 찾는 여정을 지원합니다.</p>
+            <p>
+                <a href="https://www.genesis.com/kr/ko/shoppingtools.html">
+                    자세히 보기
+                    <span class="sub_content_hr"></span>
+                </a>
+            </p>
+        </li>
+        <li class="sub_content_box color_white">
+            <img src="img/sub_content_03.jpg" alt="sub_content_01_image" class="sub_content_img">
+            <h3>GENESIS MODELS</h3>
+            <p>역동적이면서도 우아한 디자인과 최첨단 기술을 탑재한 제네시스 브랜드의 라인업을 살펴보세요.</p>
+            <p>
+                <a href="https://www.genesis.com/kr/ko/models.html">
+                    자세히 보기
+                    <span class="sub_content_hr"></span>
+                </a>
+            </p>
+        </li>
+    </ul>
+    <div class="social_connect">
+        <div class="social_title">
+            <h2 class="color_white">DISCOVER GENESIS</h2>
+        </div>
+    <ul class="social_content">
+        <span class="social_icon">
+            <a href="https://www.facebook.com/GenesisWorldwide" target="_blank">
+                <svg class="svg_style" viewBox="0 0 48 48">
+                    <path d="M22,36H26.5V25.5H31V21H26.5V18a1.43,1.43,0,0,1,1.33-1.5H31V12H27.25A5.32,5.32,0,0,0,22,17.25V21H19v4.5h3Z"  fill="#6f6f6f"></path>
+                </svg>
+            </a>
+        </span>
+        <span class="social_icon">
+            <a href="https://www.instagram.com/genesisworldwide" target="_blank">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="4" fill="#6f6f6f"></circle>
+                    <path d="M35.93 19.05a9.27 9.27 0 0 0-.56-2.9 6.1 6.1 0 0 0-3.51-3.51 8.5 8.5 0 0 0-2.86-.56C27.67 12 27.26 12 24 12s-3.67 0-4.95.08a8.53 8.53 0 0 0-2.91.55A5.86 5.86 0 0 0 14 14a6 6 0 0 0-1.39 2.11 8.89 8.89 0 0 0-.55 2.89C12 20.3 12 20.7 12 24s0 3.66.08 4.95a8.72 8.72 0 0 0 .55 2.9A5.81 5.81 0 0 0 14 34a6.15 6.15 0 0 0 2.12 1.39A9.1 9.1 0 0 0 19 36c1.28.06 1.68.07 5 .07s3.7-.07 5-.07a9.1 9.1 0 0 0 2.92-.55A5.93 5.93 0 0 0 34 34a6 6 0 0 0 1.39-2.13 9.13 9.13 0 0 0 .55-2.87c.06-1.34.06-1.74.06-5s0-3.66-.07-4.95zM24 30.16A6.16 6.16 0 1 1 30.16 24 6.16 6.16 0 0 1 24 30.16zM30.41 19a1.44 1.44 0 1 1 1.44-1.44A1.43 1.43 0 0 1 30.41 19z"  fill="#6f6f6f"></path>
+                </svg>
+            </a>
+        </span>
+        <span class="social_icon">
+            <a href="https://www.youtube.com/genesisworldwide" target="_blank">
+                <svg viewBox="0 0 48 48">
+                    <path d="M38.74 18a6.53 6.53 0 0 0-1.2-3 4.27 4.27 0 0 0-3-1.28c-4.22-.3-10.54-.3-10.54-.3s-6.27 0-10.52.31a4.27 4.27 0 0 0-3 1.28 6.53 6.53 0 0 0-1.2 3A46.46 46.46 0 0 0 9 22.86v2.28A46.59 46.59 0 0 0 9.27 30a6.55 6.55 0 0 0 1.2 3 5 5 0 0 0 3.34 1.28c2.4.23 10.19.31 10.19.31s6.32 0 10.53-.32a4.3 4.3 0 0 0 3-1.27 6.55 6.55 0 0 0 1.2-3 46.59 46.59 0 0 0 .27-4.86v-2.28a46.46 46.46 0 0 0-.26-4.86zm-17.88 9.92v-8.47L29 23.69z"  fill="#6f6f6f"></path>
+                </svg>
+            </a>
+        </span>
+    </ul>
+    </div>
+
+</section>
+
+<!--footer-->
+<footer class="site_footer">
+    <ul class="footer_main_content_container">
+        <li class="footer_main_content">
+            <p class="color_brown footer_title">HAVE A QUESTION</p>
+            <p class="color_white"><a href="">고객센터</a></p>
+        </li>
+        <div class="flex_reverse">
+            <li class="footer_main_content" id="m_footer">
+                <p class="color_brown footer_title" onclick="mFooterToggle()">GO TO</p>
+                <div class="footer_list">
+                    <p class="color_white"><a href="">사이트맵</a></p>
+                    <p class="color_white"><a href="">보증안내</a></p>
+                    <p class="color_white"><a href="">이용약관</a></p>
+                    <p class="color_white"><a href="">저작권 안내</a></p>
+                    <p class="color_brown"><a href="">개인정보 처리방침</a></p>
+                    <p class="color_white"><a href="">자주묻는 질문</a></p>
+                </div>
+            </li>
+            <div class="flex_reverse_02">
+                <li class="footer_main_content">
+                    <p class="color_brown footer_title">회원 로그인</p>
+                    <p class="color_white"><a href="">로그인</a></p>
+                </li>
+                <li class="footer_main_content">
+                    <p class="color_brown footer_title">소셜미디어</p>
+                    <div class="footer_social_icon_container">
+                        <span class="footer_social_icon">
+                            <svg class="svg_style" viewBox="0 0 48 48">
+                                <path d="M22,36H26.5V25.5H31V21H26.5V18a1.43,1.43,0,0,1,1.33-1.5H31V12H27.25A5.32,5.32,0,0,0,22,17.25V21H19v4.5h3Z"  fill="#cd9a81"></path>
+                            </svg>
+                        </span>
+                        <span class="footer_social_icon">
+                            <svg viewBox="0 0 48 48">
+                                <circle cx="24" cy="24" r="4" fill="#cd9a81"></circle>
+                                <path d="M35.93 19.05a9.27 9.27 0 0 0-.56-2.9 6.1 6.1 0 0 0-3.51-3.51 8.5 8.5 0 0 0-2.86-.56C27.67 12 27.26 12 24 12s-3.67 0-4.95.08a8.53 8.53 0 0 0-2.91.55A5.86 5.86 0 0 0 14 14a6 6 0 0 0-1.39 2.11 8.89 8.89 0 0 0-.55 2.89C12 20.3 12 20.7 12 24s0 3.66.08 4.95a8.72 8.72 0 0 0 .55 2.9A5.81 5.81 0 0 0 14 34a6.15 6.15 0 0 0 2.12 1.39A9.1 9.1 0 0 0 19 36c1.28.06 1.68.07 5 .07s3.7-.07 5-.07a9.1 9.1 0 0 0 2.92-.55A5.93 5.93 0 0 0 34 34a6 6 0 0 0 1.39-2.13 9.13 9.13 0 0 0 .55-2.87c.06-1.34.06-1.74.06-5s0-3.66-.07-4.95zM24 30.16A6.16 6.16 0 1 1 30.16 24 6.16 6.16 0 0 1 24 30.16zM30.41 19a1.44 1.44 0 1 1 1.44-1.44A1.43 1.43 0 0 1 30.41 19z"  fill="#cd9a81"></path>
+                            </svg>
+                        </span>
+                        <span class="footer_social_icon">
+                            <svg viewBox="0 0 48 48">
+                                <path d="M38.74 18a6.53 6.53 0 0 0-1.2-3 4.27 4.27 0 0 0-3-1.28c-4.22-.3-10.54-.3-10.54-.3s-6.27 0-10.52.31a4.27 4.27 0 0 0-3 1.28 6.53 6.53 0 0 0-1.2 3A46.46 46.46 0 0 0 9 22.86v2.28A46.59 46.59 0 0 0 9.27 30a6.55 6.55 0 0 0 1.2 3 5 5 0 0 0 3.34 1.28c2.4.23 10.19.31 10.19.31s6.32 0 10.53-.32a4.3 4.3 0 0 0 3-1.27 6.55 6.55 0 0 0 1.2-3 46.59 46.59 0 0 0 .27-4.86v-2.28a46.46 46.46 0 0 0-.26-4.86zm-17.88 9.92v-8.47L29 23.69z"  fill="#cd9a81"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </ul>
+    <ul class="footer_second">
+        <li class="footer_left">
+            <p><a href="https://www.genesis.com/worldwide/en/select-a-local-site.html" target="_blank">제네시스 월드와이드</a></p>
+            <p><a href="https://pr.genesis.com/kr/ko/pr-center-article-list.html" target="_blank">미디어 센터</a></p>
+            <p><a href="http://golf.genesis.com/" target="_blank">제네시스 챔피언십</a></p>
+        </li>
+        <li class="footer_right" onclick="langPageToggle()">
+            <div class="footer_arrow">
+                <div id="footer_arrow_left"></div>
+                <div id="footer_arrow_right"></div>
+            </div>
+            <div class="m_footer_plus">
+                <div id="m_footer_vertical"></div>
+                <div id="m_footer_horizontal"></div>
+            </div>
+            <p>한국어</p>
+        </li>
+        <span id="lang_container">
+            <div class="lang_content"><a href="">ENGLISH</a></div>
+            <div class="lang_content"><a href="">한국어</a></div>
+        </span>
+    </ul>
+    <p class="disclaimer">© Copyright 2020 Hyundai Motor Company. All Rights Reserved.</p>
+
+    <script>
+        langState = 0;//닫혀있는상태
+        mLangState = 0;
+        function langPageToggle() {
+            if(document.body.clientWidth > 1023) {
+            if (langState == 0) {
+                document.getElementById("lang_container").style = "bottom:100px; transition:all 0.5s";
+                document.getElementById("footer_arrow_left").style = "transform: rotate(0deg);"
+                document.getElementById("footer_arrow_right").style = "transform: rotate(0deg);"
+                langState = 1;
+            }
+            else if (langState == 1) {
+                document.getElementById("lang_container").style = "bottom:-50px; transition:all 0.5s";
+                document.getElementById("footer_arrow_left").style = "transform: rotate(-35deg);"
+                document.getElementById("footer_arrow_right").style = "transform: rotate(35deg);"
+                langState = 0;
+            }
+        }
+        if (document.body.clientWidth < 1023) {
+                if (mLangState == 0) {
+                document.getElementById("lang_container").style = "height:120px"
+                document.getElementById("m_footer_vertical").style = "transform: rotate(180deg)";
+                document.getElementById("m_footer_horizontal").style = "transform: rotate(180deg)"
+                mLangState = 1;
+                }
+                else if (mLangState == 1) {
+                document.getElementById("lang_container").style = "height:0px"
+                document.getElementById("m_footer_vertical").style = "transform: rotate(90deg)";
+                document.getElementById("m_footer_horizontal").style = "transform: rotate(0deg)";
+                mLangState = 0;
+                }
+            }
+    }
+
+        
+        /*mFooterToggle -> goTo 부분*/
+
+        var mFooterState = 0;
+
+        function mFooterToggle(){
+            if (document.body.clientWidth < 1023){
+                if(mFooterState == 0){
+                document.getElementById("m_footer").style = "height:590px;transition: all 0.5s;"
+                mFooterState = 1;}
+                else if(mFooterState == 1){
+                document.getElementById("m_footer").style = "height:84px;transition: all 0.5s;"
+                mFooterState = 0;}
+            }
+        }
+
+
+    </script>
+    <script>
+        function scrollFadeIn () {
+            console.log(document.body.scrollTop);
+            console.log(document.getElementById("g_awards").offsetTop);
+    
+            var bodyScrollTop = document.body.scrollTop; // body로부터 위치
+            
+            var subContentOffsetTop = document.getElementById("sub_content_container").offsetTop - window.innerHeight + 200;
+            var subContentIndex = document.getElementsByClassName("sub_content_box");
+            
+            var newsEventOffsetTop = document.getElementById("news_event").offsetTop - window.innerHeight + 550;
+            var modelBoxIndex = document.getElementsByClassName("g_model_box");
+    
+            var gAwardsOffsetTop = document.getElementById("g_awards").offsetTop - window.innerHeight + 650;
+            
+    
+            /*model_box_effect*/
+            if (bodyScrollTop >= newsEventOffsetTop) {
+                for(i=0; i < modelBoxIndex.length; i++) {
+                    modelBoxIndex[i].style = "padding-top:0px; opacity:1; transition-delay:" + i*0.1 +"s;";
+                }
+            }
+    
+            /*sub_content_box_effect*/
+            if (bodyScrollTop >= subContentOffsetTop) {
+                for(i=0; i < subContentIndex.length; i++) {
+                    subContentIndex[i].style = "padding-top:0px; opacity:1; transition-delay:" + i*0.2 +"s;";
+                }
+            }
+        }
+        
+    </script>
 </footer>
+
+</main>
 
 </body>
 </html>
