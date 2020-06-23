@@ -397,7 +397,6 @@
             gnbState.style = "top:64px;";
             document.getElementById("body").style = "height:100vh; overflow:hidden; background-color:#141414"
             menuState = 1;
-            console.log(menuState)
         }
         
         else if (menuState == 1) {
@@ -511,9 +510,6 @@
         var mySlide = document.getElementsByClassName("myslide")
         var buttonPoint = document.getElementsByClassName("button_point")
 
-        console.log("currentSlideIndex" + currentSlideIndex)
-        console.log("nextSlideIndex" + nextSlideIndex)
-        
         window.onload = function() {
             buttonPoint[0].addEventListener ('click',function(){slideMove(0)});
             buttonPoint[1].addEventListener ('click',function(){slideMove(1)});
@@ -527,10 +523,6 @@
 
         nextSlideIndex = clickIndex; // 사용자가 누른 슬라이드 번호
         indexDifference = nextSlideIndex - currentSlideIndex; // 슬라이드간의 격차
-
-        console.log("currentSlideIndex" + currentSlideIndex)
-        console.log("nextSlideIndex" + nextSlideIndex)
-        console.log("indexDifference" + indexDifference)
 
             //슬라이드간의 격차가 1일 경우
             if(indexDifference == 1) {
@@ -770,6 +762,7 @@
         var textIndex = document.getElementsByClassName("detail_text");
         var mContainer = document.getElementById("m_container");
         var currentBtn = document.getElementsByClassName("history_current_page_btn")
+        var mPageBtn = document.getElementsByClassName("g_history_btn")
 
         function showPage(historyIndex) {
             if(document.body.clientWidth > 1024) {
@@ -789,47 +782,25 @@
             document.getElementById("current_hr").style.left = currentBar + "%";
             }
 
-            if(document.body.clientWidth < 1024) {
+            /*클릭한 페이지를 중앙에 나타내기*/
+            if(document.body.clientWidth < 1025) {
             document.getElementById("body").style = "height:100vh; overflow:hidden;";
             mContainer.style = "opacity:1; position:fixed; z-index:10;";
-            document.getElementById("m_history_content").style = "transform: translateX(0)";
-            mContainer.scrollTo({left:414*historyIndex,behavior:'smooth'});
+            mContainer.scrollLeft = historyIndex * innerWidth / 1.85;
             }
             if(document.body.clientWidth < 769) {
-            document.getElementById("m_history_content").style = "transform: translateX(0)";
-            mContainer.scrollTo({left:768*historyIndex,behavior:'smooth'});
-            }
-            if(document.body.clientWidth < 415) {
-            document.getElementById("m_history_content").style = "transform: translateX(0)";
-            mContainer.scrollTo({left:414*historyIndex,behavior:'smooth'});
-            }
-            if(document.body.clientWidth < 376) {
-            document.getElementById("m_history_content").style = "transform: translateX(0)";
-            mContainer.scrollTo({left:375*historyIndex,behavior:'smooth'});
-            }
-            if(document.body.clientWidth < 321) {
-            document.getElementById("m_history_content").style = "transform: translateX(0)";
-            mContainer.scrollTo({left:320*historyIndex,behavior:'smooth'});
+            document.getElementById("body").style = "height:100vh; overflow:hidden;";
+            mContainer.style = "opacity:1; position:fixed; z-index:10;";
+            mContainer.scrollLeft = historyIndex * innerWidth;
             }
         }
 
         function mobileShowPage(btnIndex) {
-            if(document.body.clientWidth < 769) {
-                mContainer.scrollTo({left:768*btnIndex,behavior:'smooth'});
-            }
-            if(document.body.clientWidth < 415) {
-                mContainer.scrollTo({left:414*btnIndex,behavior:'smooth'});
-            }
-            if(document.body.clientWidth < 376) {
-                mContainer.scrollTo({left:375*btnIndex,behavior:'smooth'});
-            }
-            if(document.body.clientWidth < 321) {
-                mContainer.scrollTo({left:320*btnIndex,behavior:'smooth'});
-            }
-            
+            mContainer.scrollLeft = btnIndex * innerWidth;
         }
 
         function mContainerClose() {
+            /*페이지 닫기*/
             document.getElementById("body").style = "height:auto; overflow:visible;";
             mContainer.style = "opacity:0; position:static; z-index:0"
         }
@@ -1037,8 +1008,6 @@
     </script>
     <script>
         function scrollFadeIn () {
-            console.log(document.body.scrollTop);
-            console.log(document.getElementById("g_awards").offsetTop);
     
             var bodyScrollTop = document.body.scrollTop; // body로부터 위치
             
