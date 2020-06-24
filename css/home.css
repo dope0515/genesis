@@ -1658,6 +1658,7 @@ transition: background-color 0.3s;
         overflow-y: auto;
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
+        pointer-events: all;
     }
 
     .snb_container {
