@@ -1658,7 +1658,6 @@ transition: background-color 0.3s;
         overflow-y: auto;
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
-        pointer-events: all;
     }
 
     .snb_container {
@@ -1764,14 +1763,6 @@ transition: background-color 0.3s;
         background-color: #fff;
     }
 
-    .snb:nth-child(4) .snb_container {
-        height: 130vh;
-        -webkit-overflow-scrolling: touch;
-        overflow-x: hidden;
-        overflow-y: auto;
-        pointer-events: all;
-    }
-
     .gnb_content_container:hover .arrow_right {
         transform: rotate(-38deg);
         background-color: #fff;
@@ -1793,7 +1784,7 @@ transition: background-color 0.3s;
     }
 
     .brand_box h3 {
-        padding: 30px 20px;
+        padding: 2%;
         margin: 0;
         border-bottom: 1px solid rgba(100, 100, 100, 0.3);
     }
