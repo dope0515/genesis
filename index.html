@@ -796,7 +796,13 @@
         }
 
         function mobileShowPage(btnIndex) {
-            mContainer.scrollLeft = btnIndex * innerWidth;
+            if(document.body.clientWidth < 1025) {
+            mContainer.scrollLeft = historyIndex * innerWidth / 1.85;
+            }
+            if(document.body.clientWidth < 769) {
+                mContainer.scrollLeft = btnIndex * innerWidth;
+            }
+            
         }
 
         function mContainerClose() {
