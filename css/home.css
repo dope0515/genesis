@@ -179,7 +179,7 @@ nav {
 
 .m_back_btn {
     width: 100%;
-    height: 10%;
+    height: 58px;
     background-color: #000;
     display: none;
     align-items: center;
@@ -1806,6 +1806,7 @@ transition: background-color 0.3s;
         opacity: 0;
         transition: all 1s;
         scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
     }
 
     #m_history_content {
