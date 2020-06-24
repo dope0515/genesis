@@ -1767,7 +1767,8 @@ transition: background-color 0.3s;
         height: 130vh;
         -webkit-overflow-scrolling: touch;
         overflow-x: hidden;
-        overflow-y: scroll;
+        overflow-y: auto;
+        pointer-events: all;
     }
 
     .gnb_content_container:hover .arrow_right {
