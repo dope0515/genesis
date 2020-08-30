@@ -648,13 +648,12 @@ transition: background-color 0.3s;
     background-size: cover;
 }
 .button_container {
+    width: fit-content;
     position: relative;
-    bottom: 0px;
-    left: calc(50% - 60px);
-    width: 120px;
-    height: 20px;
+    bottom: 80px;
+    transform: translate(-50%,-50%);
+    left: 50%;
     display:flex;
-    justify-content: center;
     align-items: center;
     z-index: 6;
 }
@@ -667,7 +666,6 @@ transition: background-color 0.3s;
     box-sizing: border-box;
     border-radius: 100%;
     z-index: 1;
-    bottom: 50px;
 }
 .button_point:hover {
     cursor: pointer;
@@ -1601,7 +1599,7 @@ transition: background-color 0.3s;
     }
 
     .button_container {
-        left:calc(50% - 80px);;
+        left:calc(50% - 20px);
     }
 
     .footer_main_content_container {
@@ -2111,6 +2109,10 @@ transition: background-color 0.3s;
         padding: 0 2%;
     }
 
+    .button_container {
+        left:calc(50% - 38px);
+        bottom: 28px;
+    }
 
     .main_bg_container {
         height: 78%;
